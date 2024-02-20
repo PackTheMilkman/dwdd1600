@@ -54,9 +54,11 @@ main {
 }
 main h1 {
     color: #203731;
+    margin: 0;
 }
 main h2 {
     color: #203731;
+    margin-top: 0.3rem;
     margin-bottom: 0.2rem;
 }
 main h2 {
@@ -74,15 +76,18 @@ main ol {
 main dl dt {
     color: #203731;
     font-weight: 700;
+    margin: 0;
 }
 main dl dd {
     color: #203731;
-    font-size: 0.9rem
+    font-size: 0.9rem;
+    margin: 0 0 0 0;
 }
 main ul {
+    columns: 2;
     list-style-type:disc;
-    padding: 0.5rem 3vw;
-    background-color: #efefef;
+    padding: 0rem 3vw;
+    background-color: #efefef;   
 }
 main ul li {
     line-height: 125%;
