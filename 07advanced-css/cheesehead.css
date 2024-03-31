@@ -1,0 +1,292 @@
+/* prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+body{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #eaeaea; 
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin:0;
+    color: #203731;
+    padding: 0;
+}
+header p {
+    margin:0;
+    color: #203731;
+    letter-spacing: 0.5px;
+}
+
+/* nav */
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+        nav ul {
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+        }
+        nav a {
+            display: block;
+            padding: 0.8rem;
+            text-decoration: none;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 1px #aaa;
+            color: #203731;
+        }
+        nav .active a {
+            background-color: #203731;
+            background-image: linear-gradient(to bottom, #2e4f46, #203731 );
+            color: #ffb612;
+        }
+
+    }/* end of media query*/
+
+
+    /* Big Screens */
+    @media only screen and (min-width: 601px) {
+
+        nav {
+        background-color: #ffb612;
+    }
+    nav ul {
+       list-style-type: none;
+       padding: 0 2vw;
+       margin: 0;
+       display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #203731;
+        font-weight: 700;
+        display: block;
+        padding: 0.83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #203731;
+        color:  #ffb612;
+    }
+    nav a:hover {
+        color: #fff;
+}
+
+} /* end of media query*/
+
+
+
+}
+
+/* Main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #203731;
+    margin: 0;
+}
+main h2 {
+    color: #203731;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+main h2 {
+    color: #203731;
+    margin-bottom: 0.2rem;
+}
+main p {
+    color: #2f3133;
+    margin: 0 0 0.3rem 0; 
+}
+main ol {
+    padding: 0.5rem 3vw;
+    background-color: #efefef;
+}
+main dl dt {
+    color: #203731;
+    font-weight: 700;
+    margin: 0;
+}
+main dl dd {
+    color: #000;
+    font-size: 0.9rem;
+    margin: 0 0 0 0;
+}
+main ul {
+    columns: 2;
+    list-style-type:disc;
+    padding: 0rem 3vw;
+    background-color: #efefef;   
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem
+}
+main address {
+    font-style: normal;
+    background-color: #ffb612;
+    padding: 0.5rem;
+    width: 12.5rem;
+    border: 1px solid #203731;
+    border-radius: 0.5rem;
+}
+main a {
+    color: #203731;
+}
+main a:hover {
+    color: rgb(239, 0, 24);
+}
+.inthero {
+    width: 100%;
+    margin: 0;
+}
+.inthero img {
+    width: 100%;
+    height: auto;
+}  
+
+/* Footer */
+footer {
+    background-color: #aeaeae;
+    text-align: center;
+    color: #203731;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    clear: both;
+}
+footer a {
+    color: #203731;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: 0.5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+}
+div.gallery img {
+    width: 98%;
+    height: auto;
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.myForm fieldset {
+    border: 1px solid #203731;
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+}
+.myForm legend {
+    color: #203731;
+    font-size: 0.8rem;
+}
+.myForm label {
+    margin: 0.5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email] {
+    border: solid 1px #888;
+    padding: 0.3rem;
+    width: 250px;
+    border-radius: 0.3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;   
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgb(255, 182, 18,0.2);
+}
+
+.myForm [type=submit] {
+    background-color: #203731;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

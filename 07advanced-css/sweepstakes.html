@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cheesehead Nation: Home</title>
+        <link rel="stylesheet" href="cheesehead.css">
+        <meta name="author" content="Ryan Packer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn about the Green Bay Packers Football Team">
+
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="cheese.png" alt="cheese logo" width="100" height="90">
+            <div>
+                <h1>Cheesehead Nation</h1>
+                <p>Your Source for All Things Green Bay Packers</p>
+            </div>
+        </header>
+         <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">News</a></li>
+                <li><a href="roster.html">Roster</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li class="active"><a href="sweepstakes.html">Sweepstakes</a></li>
+            </ul>
+        </nav>
+         <!-- Start of the page content -->
+        <main>
+        
+        <h1>Enter the Sweepstakes!</h1>
+                <p>Fill out the required information below to enter for your chance to win the ultimate fan prize pack!
+                Including:</p>
+                <ul>
+                    <li>Player signed helmet</li>
+                    <li>Four home tickets a game of your choosing</li> 
+                    <li>Custom jersey</li>
+                    <li>Cheesehead</li>
+                </ul>
+                
+                <div class="gallery">
+        <figure>
+            <img src="images/helmet.jpg" alt="helmet" width="300" height="170">
+            <figcaption>Signed Helmet</figcaption>
+        </figure>
+                <figure>
+            <img src="images/tickets.jpg" alt="tickets" width="300" height="259">
+            <figcaption>Four home tickets</figcaption>
+        </figure>
+                <figure>
+            <img src="images/jersey.jpg" alt="jersey" width="200" height="240">
+            <figcaption>Custom Jersey</figcaption>
+        </figure>
+                <figure>
+            <img src="images/cheesehead.jpg" alt="cheesehead" width="250" height="250">
+            <figcaption>Cheesehead</figcaption>
+        </figure>
+              </div>  
+        <form method="get" class="myForm" action="thanks.html">
+            
+        <fieldset>
+            <legend>Your Information</legend>
+        <label>First Name* <input type="text" name="fname" required></label>
+        <label>Last Name* <input type="text" name="lname" required></label>
+        <label>Email Address* <input type="email" name="email" required></label>
+        <label>Mobile Number <input type="tel" name="phone" placeholder="123-456-7890"></label>
+        </fieldset>  
+            
+        <fieldset>
+            <legend>Jersey Size</legend>
+                <label><input type="radio" name="method" value="small">Small</label>
+                <label><input type="radio" name="method" value="medium">Medium</label>
+                <label><input type="radio" name="method" value="large">Large</label>
+                <label><input type="radio" name="method" value="xlarge">X Large</label>
+                <label><input type="radio" name="method" value="xxlarge">XX Large</label>
+            
+            <label>
+                <textarea name="comments" placeholder="Please type your desired name and number for the custom jersey here."></textarea>
+            </label>
+            
+        </fieldset>
+            
+        <fieldset>
+            <legend>Preferred Seat Location(s) </legend>
+                <label><input type="checkbox" name="north end" value="chosen">North End</label>
+                <label><input type="checkbox" name="south end" value="chosen">South End</label>
+                <label><input type="checkbox" name="east side" value="chosen">East Side</label>
+                <label><input type="checkbox" name="west side" value="chosen">West Side</label>
+            
+            <label>Home Opponent
+            <select name="home opponent">
+                <option value="none">Please Select</option>
+                <option value="bears">Chicago Bears</option>
+                <option value="lions">Detroit Lions</option>
+                <option value="vikings">Minnesota Vikings</option>
+                <option value="cardinals">Arizona Cardinals</option>
+                <option value="texans">Houston Texans</option>
+                <option value="colts">Indiannapolis Colts</option>
+                <option value="dolpins">Miami Dolphins</option>
+                <option value="saints">New Orleans Saints</option>
+                <option value="49ers">San Francisco 49ers</option>
+            </select>
+            </label>
+            
+        </fieldset>
+            
+        <input type="submit" value="Enter Sweepstakes">
+        
+        </form>
+            
+        </main>
+         <!-- Start of the page footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Ryan Packer &bull; <a href="mailto:10841084@uvu.edu"> Email Us</a></p> 
+        </footer>
+   
+        
+    </body>
+
+</html>
